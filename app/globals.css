@@ -123,3 +123,78 @@
     @apply bg-background text-foreground;
   }
 }
+/* ------------------------------------
+   CORAZONES ESTILO METÁLICO PREMIUM
+--------------------------------------- */
+
+.heart-wrapper {
+  position: relative;
+  width: 340px;
+  height: 260px;
+}
+
+/* Forma base del corazón */
+.heart-shape {
+  position: absolute;
+  width: 165px;
+  height: 165px;
+  background: linear-gradient(145deg, #e6eaf0, #fdfdfd, #d4d4d4);
+  border-radius: 50% 50% 45% 45%;
+  border: 5px solid #d4af37; /* oro */
+  box-shadow:
+    inset 0 0 20px rgba(255,255,255,0.7),
+    0 10px 25px rgba(0,0,0,0.3);
+  filter: drop-shadow(0 4px 18px rgba(0,0,0,0.2));
+  transition: transform 1.3s ease, opacity 1.3s ease;
+}
+
+/* Izquierda */
+.heart-left {
+  transform: rotate(-45deg) translateX(-85px);
+}
+
+/* Derecha */
+.heart-right {
+  transform: rotate(45deg) translateX(85px);
+}
+
+/* Decoraciones doradas */
+.heart-deco {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  width: 60px;
+  transform: translateX(-50%);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.heart-deco svg {
+  width: 60px;
+  fill: #d4af37;
+  filter: drop-shadow(0 0 4px rgba(255,215,0,0.7));
+}
+
+/* Movimiento al abrir */
+.open-left {
+  transform: rotate(-45deg) translateX(-260px) translateY(-30px);
+  opacity: 0;
+}
+
+.open-right {
+  transform: rotate(45deg) translateX(260px) translateY(-30px);
+  opacity: 0;
+}
+
+/* Texto central */
+.heart-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: serif;
+  color: #d4af37;
+  font-size: 2rem;
+  text-shadow: 0 0 6px rgba(0,0,0,0.3);
+  pointer-events: none;
+}

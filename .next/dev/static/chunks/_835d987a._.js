@@ -8,123 +8,133 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
 ;
-;
 function CoverPage({ onEnter }) {
     _s();
-    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
-    const [isHovering, setIsHovering] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [openHearts, setOpenHearts] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const handleEnter = ()=>{
-        onEnter();
+        setOpenHearts(true);
+        // Reproducir música
+        const audio = new Audio("cancion.mp3");
+        audio.play();
+        // Espera a que termine la animación y entra
+        setTimeout(()=>{
+            onEnter();
+        }, 1800);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "min-h-screen w-full bg-gradient-to-br from-rose-200 via-rose-100 to-rose-50 flex items-center justify-center p-4",
+        className: "relative min-h-screen w-full bg-gradient-to-br from-rose-200 via-rose-100 to-rose-50 flex items-center justify-center overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute top-10 left-10 opacity-20",
+                className: "absolute flex items-center justify-center transition-all duration-1000",
+                style: {
+                    transform: openHearts ? "scale(1.4)" : "scale(0)",
+                    opacity: openHearts ? 1 : 0
+                },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "text-6xl",
-                    children: "🌹"
-                }, void 0, false, {
+                    className: "relative w-[260px] h-[200px] flex items-center justify-center",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: `heart left ${openHearts ? "open-left" : ""}`
+                        }, void 0, false, {
+                            fileName: "[project]/components/cover-page.tsx",
+                            lineNumber: 35,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: `heart right ${openHearts ? "open-right" : ""}`
+                        }, void 0, false, {
+                            fileName: "[project]/components/cover-page.tsx",
+                            lineNumber: 38,
+                            columnNumber: 11
+                        }, this),
+                        !openHearts && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: "absolute text-3xl font-serif text-amber-600 drop-shadow-md",
+                            children: "Bodas de Coral"
+                        }, void 0, false, {
+                            fileName: "[project]/components/cover-page.tsx",
+                            lineNumber: 42,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "[project]/components/cover-page.tsx",
-                    lineNumber: 18,
+                    lineNumber: 32,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/cover-page.tsx",
-                lineNumber: 17,
+                lineNumber: 25,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute bottom-10 right-10 opacity-20",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "text-6xl",
-                    children: "🌹"
-                }, void 0, false, {
-                    fileName: "[project]/components/cover-page.tsx",
-                    lineNumber: 21,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/components/cover-page.tsx",
-                lineNumber: 20,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "text-center z-10 max-w-md",
+            !openHearts && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "text-center z-10 max-w-md transition-opacity duration-500",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                         className: "text-5xl md:text-6xl font-serif font-bold text-rose-900 mb-4",
                         children: "Clotario & Justa"
                     }, void 0, false, {
                         fileName: "[project]/components/cover-page.tsx",
-                        lineNumber: 26,
-                        columnNumber: 9
+                        lineNumber: 52,
+                        columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-2xl md:text-3xl text-rose-800 font-serif mb-2",
                         children: "35 Años de Amor"
                     }, void 0, false, {
                         fileName: "[project]/components/cover-page.tsx",
-                        lineNumber: 28,
-                        columnNumber: 9
+                        lineNumber: 56,
+                        columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "h-1 w-24 bg-rose-400 mx-auto mb-8"
                     }, void 0, false, {
                         fileName: "[project]/components/cover-page.tsx",
-                        lineNumber: 30,
-                        columnNumber: 9
+                        lineNumber: 60,
+                        columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-lg text-rose-700 mb-12 font-light",
                         children: "Celebrando tres décadas y media de amor, dedicación y felicidad juntos"
                     }, void 0, false, {
                         fileName: "[project]/components/cover-page.tsx",
-                        lineNumber: 32,
-                        columnNumber: 9
+                        lineNumber: 62,
+                        columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: handleEnter,
-                        onMouseEnter: ()=>setIsHovering(true),
-                        onMouseLeave: ()=>setIsHovering(false),
-                        className: `px-12 py-4 text-xl font-serif font-semibold rounded-full transition-all duration-300 transform ${isHovering ? "bg-rose-700 text-white scale-105 shadow-2xl" : "bg-rose-500 text-white shadow-lg"}`,
+                        className: "px-12 py-4 text-xl font-serif font-semibold rounded-full bg-rose-600 text-white shadow-lg hover:bg-rose-700 transition-all",
                         children: "Entrar"
                     }, void 0, false, {
                         fileName: "[project]/components/cover-page.tsx",
-                        lineNumber: 37,
-                        columnNumber: 9
+                        lineNumber: 66,
+                        columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-sm text-rose-600 mt-8 font-light",
                         children: "Acompáñanos en esta celebración especial"
                     }, void 0, false, {
                         fileName: "[project]/components/cover-page.tsx",
-                        lineNumber: 48,
-                        columnNumber: 9
+                        lineNumber: 73,
+                        columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/cover-page.tsx",
-                lineNumber: 25,
-                columnNumber: 7
+                lineNumber: 51,
+                columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/cover-page.tsx",
-        lineNumber: 15,
+        lineNumber: 22,
         columnNumber: 5
     }, this);
 }
-_s(CoverPage, "k4jnXd+GS2d+y76Coa2nAAv2Ht8=", false, function() {
-    return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
-    ];
-});
+_s(CoverPage, "o2eencd94GXb+R2dR/EnYGWoJFc=");
 _c = CoverPage;
 var _c;
 __turbopack_context__.k.register(_c, "CoverPage");
