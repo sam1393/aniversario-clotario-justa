@@ -19,12 +19,13 @@ export default function AnniversaryPage() {
       const nameParam = params.get("name")
       const pasesParam = params.get("pases")
 
-      if (nameParam) setGuestName(nameParam)
+      if (nameParam) setGuestName(decodeURIComponent(nameParam))
       if (pasesParam && !isNaN(Number(pasesParam))) {
         setGuestPases(Number(pasesParam))
       }
     }
   }, [])
+
 
   const photos = [
     "/images/image01.jpeg",
