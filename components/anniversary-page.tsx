@@ -1,16 +1,30 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { MapPin, Calendar, Clock, X, User } from "lucide-react"
 
-export default function AnniversaryPage({
-  guestName = "Invitado Especial",
-  guestPases = 2,
-}: {
-  guestName?: string
-  guestPases?: number
-}) {
+export default function AnniversaryPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
+
+  // -------------------------------
+  // 🔥 Invitado dinámico por URL
+  // -------------------------------
+  const [guestName, setGuestName] = useState("Invitado Especial")
+  const [guestPases, setGuestPases] = useState(2)
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search)
+
+      const nameParam = params.get("name")
+      const pasesParam = params.get("pases")
+
+      if (nameParam) setGuestName(nameParam)
+      if (pasesParam && !isNaN(Number(pasesParam))) {
+        setGuestPases(Number(pasesParam))
+      }
+    }
+  }, [])
 
   const photos = [
     "/images/image01.jpeg",
@@ -84,7 +98,7 @@ export default function AnniversaryPage({
           ></div>
         </div>
 
-        {/* Nueva sección: Invitado + Pases */}
+        {/* 🔥 Sección dinámica de Invitado */}
         <div className="bg-white/50 backdrop-blur-md rounded-xl p-6 md:p-8 mb-10 shadow-lg border border-white/40">
           <div className="flex items-center gap-3 mb-4">
             <User className="w-7 h-7 text-red-600" />
@@ -110,7 +124,6 @@ export default function AnniversaryPage({
 
         {/* Detalles del evento */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8">
-          {/* Fecha */}
           <div className="bg-white/50 backdrop-blur-sm rounded-lg p-6 text-center shadow-lg hover:shadow-xl transition-shadow border border-white/40">
             <Calendar className="w-8 h-8 text-red-600 mx-auto mb-3" />
             <h3 className="text-lg font-serif text-red-800 mb-2">Fecha</h3>
@@ -119,7 +132,6 @@ export default function AnniversaryPage({
             </p>
           </div>
 
-          {/* Hora */}
           <div className="bg-white/50 backdrop-blur-sm rounded-lg p-6 text-center shadow-lg hover:shadow-xl transition-shadow border border-white/40">
             <Clock className="w-8 h-8 text-red-600 mx-auto mb-3" />
             <h3 className="text-lg font-serif text-red-800 mb-2">Hora</h3>
@@ -128,7 +140,6 @@ export default function AnniversaryPage({
             </p>
           </div>
 
-          {/* Lugar */}
           <div className="bg-white/50 backdrop-blur-sm rounded-lg p-6 text-center shadow-lg hover:shadow-xl transition-shadow border border-white/40">
             <MapPin className="w-8 h-8 text-red-600 mx-auto mb-3" />
             <h3 className="text-lg font-serif text-red-800 mb-2">Lugar</h3>

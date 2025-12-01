@@ -151,8 +151,17 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 ;
 ;
-function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
+function AnniversaryPage() {
     const [selectedImage, setSelectedImage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    // -------------------------------
+    // 🔥 Invitado dinámico por URL
+    // -------------------------------
+    const [guestName, setGuestName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("Invitado Especial");
+    const [guestPases, setGuestPases] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(2);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+        ;
+    }, []);
     const photos = [
         "/images/image01.jpeg",
         "/images/image02.jpeg",
@@ -178,7 +187,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                         children: "🌸"
                     }, void 0, false, {
                         fileName: "[project]/components/anniversary-page.tsx",
-                        lineNumber: 36,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -186,7 +195,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                         children: "🌹"
                     }, void 0, false, {
                         fileName: "[project]/components/anniversary-page.tsx",
-                        lineNumber: 37,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -194,7 +203,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                         children: "🌼"
                     }, void 0, false, {
                         fileName: "[project]/components/anniversary-page.tsx",
-                        lineNumber: 38,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -202,7 +211,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                         children: "🌹"
                     }, void 0, false, {
                         fileName: "[project]/components/anniversary-page.tsx",
-                        lineNumber: 41,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -210,7 +219,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                         children: "🌸"
                     }, void 0, false, {
                         fileName: "[project]/components/anniversary-page.tsx",
-                        lineNumber: 42,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -218,7 +227,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                         children: "🌼"
                     }, void 0, false, {
                         fileName: "[project]/components/anniversary-page.tsx",
-                        lineNumber: 43,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -226,7 +235,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                         children: "🌹"
                     }, void 0, false, {
                         fileName: "[project]/components/anniversary-page.tsx",
-                        lineNumber: 46,
+                        lineNumber: 60,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -234,7 +243,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                         children: "🌸"
                     }, void 0, false, {
                         fileName: "[project]/components/anniversary-page.tsx",
-                        lineNumber: 47,
+                        lineNumber: 61,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -242,7 +251,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                         children: "🌼"
                     }, void 0, false, {
                         fileName: "[project]/components/anniversary-page.tsx",
-                        lineNumber: 48,
+                        lineNumber: 62,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -250,7 +259,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                         children: "🌸"
                     }, void 0, false, {
                         fileName: "[project]/components/anniversary-page.tsx",
-                        lineNumber: 50,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -258,7 +267,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                         children: "🌹"
                     }, void 0, false, {
                         fileName: "[project]/components/anniversary-page.tsx",
-                        lineNumber: 51,
+                        lineNumber: 65,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -266,13 +275,13 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                         children: "🌼"
                     }, void 0, false, {
                         fileName: "[project]/components/anniversary-page.tsx",
-                        lineNumber: 52,
+                        lineNumber: 66,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/anniversary-page.tsx",
-                lineNumber: 34,
+                lineNumber: 48,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -289,7 +298,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                 children: "Clotario & Justa"
                             }, void 0, false, {
                                 fileName: "[project]/components/anniversary-page.tsx",
-                                lineNumber: 59,
+                                lineNumber: 73,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -300,7 +309,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                 children: "35 Años de Amor"
                             }, void 0, false, {
                                 fileName: "[project]/components/anniversary-page.tsx",
-                                lineNumber: 66,
+                                lineNumber: 80,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -311,12 +320,12 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                     className: "w-28 h-28 md:w-36 md:h-36 object-cover rounded-full shadow-lg border-4 border-white"
                                 }, void 0, false, {
                                     fileName: "[project]/components/anniversary-page.tsx",
-                                    lineNumber: 74,
+                                    lineNumber: 88,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/anniversary-page.tsx",
-                                lineNumber: 73,
+                                lineNumber: 87,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -326,13 +335,13 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/components/anniversary-page.tsx",
-                                lineNumber: 81,
+                                lineNumber: 95,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/anniversary-page.tsx",
-                        lineNumber: 58,
+                        lineNumber: 72,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -345,7 +354,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                         className: "w-7 h-7 text-red-600"
                                     }, void 0, false, {
                                         fileName: "[project]/components/anniversary-page.tsx",
-                                        lineNumber: 90,
+                                        lineNumber: 104,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -353,13 +362,13 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                         children: "Información del Invitado"
                                     }, void 0, false, {
                                         fileName: "[project]/components/anniversary-page.tsx",
-                                        lineNumber: 91,
+                                        lineNumber: 105,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/anniversary-page.tsx",
-                                lineNumber: 89,
+                                lineNumber: 103,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -372,7 +381,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                                 children: "Nombre:"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/anniversary-page.tsx",
-                                                lineNumber: 98,
+                                                lineNumber: 112,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -380,13 +389,13 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                                 children: guestName
                                             }, void 0, false, {
                                                 fileName: "[project]/components/anniversary-page.tsx",
-                                                lineNumber: 99,
+                                                lineNumber: 113,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/anniversary-page.tsx",
-                                        lineNumber: 97,
+                                        lineNumber: 111,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -396,7 +405,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                                 children: "Número de Pases:"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/anniversary-page.tsx",
-                                                lineNumber: 103,
+                                                lineNumber: 117,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -404,25 +413,25 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                                 children: guestPases
                                             }, void 0, false, {
                                                 fileName: "[project]/components/anniversary-page.tsx",
-                                                lineNumber: 106,
+                                                lineNumber: 120,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/anniversary-page.tsx",
-                                        lineNumber: 102,
+                                        lineNumber: 116,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/anniversary-page.tsx",
-                                lineNumber: 96,
+                                lineNumber: 110,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/anniversary-page.tsx",
-                        lineNumber: 88,
+                        lineNumber: 102,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -435,7 +444,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                         className: "w-8 h-8 text-red-600 mx-auto mb-3"
                                     }, void 0, false, {
                                         fileName: "[project]/components/anniversary-page.tsx",
-                                        lineNumber: 115,
+                                        lineNumber: 128,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -443,7 +452,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                         children: "Fecha"
                                     }, void 0, false, {
                                         fileName: "[project]/components/anniversary-page.tsx",
-                                        lineNumber: 116,
+                                        lineNumber: 129,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -451,13 +460,13 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                         children: eventDetails.date
                                     }, void 0, false, {
                                         fileName: "[project]/components/anniversary-page.tsx",
-                                        lineNumber: 117,
+                                        lineNumber: 130,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/anniversary-page.tsx",
-                                lineNumber: 114,
+                                lineNumber: 127,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -467,7 +476,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                         className: "w-8 h-8 text-red-600 mx-auto mb-3"
                                     }, void 0, false, {
                                         fileName: "[project]/components/anniversary-page.tsx",
-                                        lineNumber: 124,
+                                        lineNumber: 136,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -475,7 +484,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                         children: "Hora"
                                     }, void 0, false, {
                                         fileName: "[project]/components/anniversary-page.tsx",
-                                        lineNumber: 125,
+                                        lineNumber: 137,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -483,13 +492,13 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                         children: eventDetails.time
                                     }, void 0, false, {
                                         fileName: "[project]/components/anniversary-page.tsx",
-                                        lineNumber: 126,
+                                        lineNumber: 138,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/anniversary-page.tsx",
-                                lineNumber: 123,
+                                lineNumber: 135,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -499,7 +508,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                         className: "w-8 h-8 text-red-600 mx-auto mb-3"
                                     }, void 0, false, {
                                         fileName: "[project]/components/anniversary-page.tsx",
-                                        lineNumber: 133,
+                                        lineNumber: 144,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -507,7 +516,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                         children: "Lugar"
                                     }, void 0, false, {
                                         fileName: "[project]/components/anniversary-page.tsx",
-                                        lineNumber: 134,
+                                        lineNumber: 145,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -515,19 +524,19 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                         children: eventDetails.location
                                     }, void 0, false, {
                                         fileName: "[project]/components/anniversary-page.tsx",
-                                        lineNumber: 135,
+                                        lineNumber: 146,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/anniversary-page.tsx",
-                                lineNumber: 132,
+                                lineNumber: 143,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/anniversary-page.tsx",
-                        lineNumber: 112,
+                        lineNumber: 126,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -538,7 +547,7 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                 children: "Momentos Especiales"
                             }, void 0, false, {
                                 fileName: "[project]/components/anniversary-page.tsx",
-                                lineNumber: 143,
+                                lineNumber: 154,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -552,29 +561,29 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                             className: "w-full h-80 md:h-96 object-cover"
                                         }, void 0, false, {
                                             fileName: "[project]/components/anniversary-page.tsx",
-                                            lineNumber: 154,
+                                            lineNumber: 165,
                                             columnNumber: 17
                                         }, this)
                                     }, index, false, {
                                         fileName: "[project]/components/anniversary-page.tsx",
-                                        lineNumber: 149,
+                                        lineNumber: 160,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/anniversary-page.tsx",
-                                lineNumber: 147,
+                                lineNumber: 158,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/anniversary-page.tsx",
-                        lineNumber: 142,
+                        lineNumber: 153,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/anniversary-page.tsx",
-                lineNumber: 56,
+                lineNumber: 70,
                 columnNumber: 7
             }, this),
             selectedImage && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -590,12 +599,12 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                                 className: "w-6 h-6"
                             }, void 0, false, {
                                 fileName: "[project]/components/anniversary-page.tsx",
-                                lineNumber: 176,
+                                lineNumber: 187,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/anniversary-page.tsx",
-                            lineNumber: 172,
+                            lineNumber: 183,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -604,24 +613,24 @@ function AnniversaryPage({ guestName = "Invitado Especial", guestPases = 2 }) {
                             className: "w-full rounded-lg shadow-2xl"
                         }, void 0, false, {
                             fileName: "[project]/components/anniversary-page.tsx",
-                            lineNumber: 178,
+                            lineNumber: 189,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/anniversary-page.tsx",
-                    lineNumber: 171,
+                    lineNumber: 182,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/anniversary-page.tsx",
-                lineNumber: 167,
+                lineNumber: 178,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/anniversary-page.tsx",
-        lineNumber: 29,
+        lineNumber: 43,
         columnNumber: 5
     }, this);
 }
